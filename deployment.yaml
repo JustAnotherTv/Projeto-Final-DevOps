@@ -25,3 +25,9 @@ spec:
             name: projeto-config
         - secretRef:
             name: projeto-secret
+          volumeMounts:
+        - name: volume-temp
+          mountPath: /mnt/dados
+      volumes:
+      - name: volume-temp
+        emptyDir: {}
