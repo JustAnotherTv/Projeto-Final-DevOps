@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: container-backend
-        image: projeto-backend:v1
+        image: projeto-backend:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 80
